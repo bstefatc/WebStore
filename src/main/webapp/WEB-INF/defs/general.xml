@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="common" template="/WEB-INF/layouts/classic.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="WebShop" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+
+	<definition name="userRegister" extends="common">
+		<put-attribute name="title" value="Sing Up" />
+		<put-attribute name="body" value="/WEB-INF/views/userRegister.jsp" />
+	</definition>
+
+	<definition name="success_registration" extends="common">
+		<put-attribute name="title" value="Registration is successfull" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/success_registration.jsp" />
+	</definition>
+
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+
+	<definition name="basket" extends="common">
+		<put-attribute name="title" value="My basket" />
+		<put-attribute name="body" value="/WEB-INF/views/basket.jsp" />
+	</definition>
+
+
+
+
+</tiles-definitions>
